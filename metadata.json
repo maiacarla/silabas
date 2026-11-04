@@ -1,0 +1,6 @@
+{
+  "name": "Desdobráveis da Alfabetização: Casos de Leitura e Sílabas",
+  "description": "Jogo educativo interativo de alfabetização inicial com desdobráveis interativos, casos de leitura (CH, LH, NH, RR, SS, GUE/GUI, GE/GI, encontros consonantais) e sílabas complexas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
