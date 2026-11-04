@@ -10,7 +10,10 @@ interface PdfPrintModalProps {
 export const PdfPrintModal: React.FC<PdfPrintModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  const pdfUrl = '/assets/aistudio/grafemas___casos_de_leitura_desdobra_veis_0079b7ea.pdf';
+  const baseUrl = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+  const pdfUrl = `${baseUrl}assets/aistudio/grafemas___casos_de_leitura_desdobra_veis_0079b7ea.pdf`;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-fadeIn">
